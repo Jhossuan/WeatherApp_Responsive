@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+  font-family: 'montseratt', sans-serif;
+  color: white;
+}
+.App{
+    background-image: url('./img/cold-bg.jpg');
+    background-size:cover;
+    background-position: bottom;
+    transition: all 0.5s;
+}
+.App.warm{
+    background-image: url('./img/warm-bg.jpg');
+    background-size:cover;
+    background-position: bottom;
+}
+main{
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+    padding:25px;
+}
+
+@media(min-width: 800px){
+    .App{
+        background-image: url('./img/paisajecold.jpg');
+    }
+    .App.warm{
+        background-image: url('./img/paisaje.jpg');
+    }
+}
